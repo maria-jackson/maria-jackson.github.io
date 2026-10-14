@@ -1,8 +1,10 @@
 <div class="site-author">
   <a href="/about/" class="site-author-link" aria-label="About Maria Jackson">
-    <img src="{{ '/assets/images/Maria-400.jpg' | relative_url }}"
-         srcset="{{ '/assets/images/Maria-400.jpg' | relative_url }} 400w, {{ '/assets/images/Maria-200.jpg' | relative_url }} 200w"
-         sizes="(max-width: 600px) 48px, 96px"
-         alt="Maria Jackson" class="site-author-avatar" loading="lazy" width="96" height="96" />
+    <picture>
+      <source type="image/webp" srcset="{{ '/assets/images/avatar-400.webp' | relative_url }} 400w, {{ '/assets/images/avatar-200.webp' | relative_url }} 200w" />
+      <img src="{{ '/assets/images/avatar-400.jpg' | relative_url }}" srcset="{{ '/assets/images/avatar-400.jpg' | relative_url }} 400w, {{ '/assets/images/avatar-200.jpg' | relative_url }} 200w"
+           sizes="(max-width: 600px) 48px, 96px"
+           alt="Maria Jackson" class="site-author-avatar" loading="lazy" width="96" height="96" />
+    </picture>
   </a>
 </div>
