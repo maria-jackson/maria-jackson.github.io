@@ -85,3 +85,10 @@ a[href*="/feed"],
 a[href*="/atom"] {
   display: none !important;
 }
+
+/* Hide any remaining rss subscribe block emitted by theme */
+.rss-subscribe,
+.rss-subscribe * {
+  display: none !important;
+  visibility: hidden !important;
+}
