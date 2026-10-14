@@ -51,13 +51,37 @@ blockquote {
 
 /* Footer / small details */
 .site-footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  padding-top: 1rem;
+  margin-top: 2rem;
   font-size: 0.9rem;
   color: #666;
 }
 
-/* Slightly reduce header chrome */
-.site-header {
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+.site-footer .wrapper {
+  text-align: center;
+}
+
+/* Hide nav Home link and post list heading */
+.site-nav a[href="/"],
+.page-heading,
+.post-list-heading {
+  display: none !important;
+}
+
+/* Make the 'Essays' heading text show in place of Posts */
+.post-list-heading {
+  display: none !important;
+}
+
+/* Hide common feed links / RSS subscribe links */
+a[href$="/feed.xml"],
+a[href$="feed.xml"],
+a[href$="/atom.xml"],
+a[href$="atom.xml"],
+.icon-feed,
+.rss,
+a[href*="/feed"],
+a[href*="/atom"] {
+  display: none !important;
 }

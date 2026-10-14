@@ -5,7 +5,6 @@ baseurl: ""
 url: "https://mariajackson.dev"
 permalink: /:title/
 plugins:
-  - jekyll-feed
   - jekyll-seo-tag
 author: "Maria Jackson"
 author_email: ""
