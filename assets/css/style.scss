@@ -123,3 +123,29 @@ a[href*="/atom"] {
 @media (max-width: 600px) {
   .site-author-avatar { width: 48px; height: 48px; }
 }
+
+/* About page layout tweaks for a larger, inline avatar */
+.about-layout {
+  display: flex;
+  align-items: center; /* vertically center avatar with the first lines of text */
+  gap: 1rem;
+}
+
+.about-avatar {
+  flex: 0 0 auto;
+}
+
+.about-avatar .site-author-avatar {
+  width: 128px;  /* larger for the about page */
+  height: 128px;
+}
+
+.about-copy {
+  flex: 1;
+}
+
+@media (max-width: 600px) {
+  .about-layout { display: block; }
+  .about-avatar { margin-bottom: 0.75rem; }
+  .about-avatar .site-author-avatar { width: 64px; height: 64px; }
+}
