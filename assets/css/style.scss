@@ -127,25 +127,43 @@ a[href*="/atom"] {
 /* About page layout tweaks for a larger, inline avatar */
 .about-layout {
   display: flex;
-  align-items: center; /* vertically center avatar with the first lines of text */
+  align-items: flex-start;   /* top-align avatar with the copy on desktop */
   gap: 1rem;
 }
 
 .about-avatar {
   flex: 0 0 auto;
+  margin-top: 0;             /* small offset if you want it lower, adjust here */
 }
 
-.about-avatar .site-author-avatar {
-  width: 128px;  /* larger for the about page */
+/* Desktop avatar size */
+.about-layout .about-avatar .site-author-avatar {
+  width: 128px;
   height: 128px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  flex-shrink: 0;
 }
 
+/* Text column */
 .about-copy {
   flex: 1;
 }
 
+/* Mobile: stack with centered avatar */
 @media (max-width: 600px) {
-  .about-layout { display: block; }
-  .about-avatar { margin-bottom: 0.75rem; }
-  .about-avatar .site-author-avatar { width: 64px; height: 64px; }
+  .about-layout {
+    display: block;
+  }
+
+  .about-avatar {
+    text-align: center;
+    margin-bottom: 0.75rem;
+  }
+
+  .about-layout .about-avatar .site-author-avatar {
+    width: 64px;
+    height: 64px;
+  }
 }
