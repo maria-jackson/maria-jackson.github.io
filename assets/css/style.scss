@@ -92,3 +92,34 @@ a[href*="/atom"] {
   display: none !important;
   visibility: hidden !important;
 }
+
+
+/* Avatar / author image styling */
+.site-author {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.75rem;
+}
+
+.site-author-link { display: inline-block; border-radius: 999px; overflow: hidden; }
+
+.site-author-avatar {
+  display: block;
+  width: 96px;      /* default display size */
+  height: 96px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid rgba(0,0,0,0.06);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  transition: transform .15s ease;
+}
+
+.site-author-link:hover .site-author-avatar,
+.site-author-link:focus .site-author-avatar {
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .site-author-avatar { width: 48px; height: 48px; }
+}
