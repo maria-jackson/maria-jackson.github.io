@@ -1,0 +1,63 @@
+---
+# Only the YAML front matter header is required so Jekyll will process this file
+---
+
+/* Page layout & readability */
+.site {
+  --site-max-width: 46rem;
+}
+
+/* Body typography */
+body {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: #222;
+}
+
+/* Accent color */
+a,
+a:visited {
+  color: #b58900;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(181, 137, 0, 0.12);
+}
+a:hover {
+  border-bottom-color: rgba(181, 137, 0, 0.28);
+}
+
+/* Post meta and headings */
+.entry-title a {
+  color: inherit;
+  text-decoration: none;
+}
+h1, h2, h3 {
+  line-height: 1.15;
+  color: #111;
+}
+
+/* Blockquote styling for essays */
+blockquote {
+  border-left: 3px solid rgba(0, 0, 0, 0.08);
+  padding-left: 1rem;
+  color: #444;
+  font-style: italic;
+  margin-left: 0;
+  margin-right: 0;
+  background: rgba(245, 245, 245, 0.6);
+  border-radius: 4px;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+
+/* Footer / small details */
+.site-footer {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Slightly reduce header chrome */
+.site-header {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}

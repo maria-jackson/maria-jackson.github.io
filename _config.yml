@@ -1,0 +1,19 @@
+theme: minima
+title: "Maria Jackson"
+description: "Essays on technology and systems thinking."
+baseurl: ""
+url: "https://mariajackson.dev"
+permalink: /:title/
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+author:
+  name: "Maria Jackson"
+  email: ""
+paginate: 5
+paginate_path: "/page:num/"
+accent_color: "#b58900"
+
+minima:
+  skin: "yellow"
