@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Workflow is Going Light Speed"
+title: "The Workflow Is Going Light Speed"
 date: 2026-10-28 12:00:00 +0000
 categories: essays
 ---
