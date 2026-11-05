@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "“Don’t Measure It That Way!”: Why Reliability Measurements End Up at Cross-Purposes"
-date: 2026-10-26 12:00:00 +0000
+date: 2026-11-05 12:00:00 +0000
 categories: essays
 ---
 In software, we have a lot of ways to measure our systems. Some are generally derided (counting lines of code), but others can be more contentious.
