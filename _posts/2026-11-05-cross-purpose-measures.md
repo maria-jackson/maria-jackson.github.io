@@ -20,7 +20,7 @@ So, why are intelligent people at odds over how to measure reliability?
 
 ## Eight Reasons to Measure
 
-In his paper [Why Measure Performance? Different Purposes Require Different Measures](https://doi.org/10.1111/1540-6210.00322), Robert Behn lists eight purposes for measuring performance, and what a measurement needs for each. He was writing about government agencies, but they translate well to reliability work. The table below is a very simplified and adapted version of his argument, and it's very much worth reading the whole thing.
+In his paper [Why Measure Performance? Different Purposes Require Different Measures](https://doi.org/10.1111/1540-6210.00322), Robert Behn lists eight purposes for measuring performance, and what a measurement needs for each. He was writing about government agencies, but they translate well to reliability work. The table below is a very simplified and adapted version of his argument. I would highly recommend reading his paper first.
 
 | Purpose and the question it answers | What the measure needs | Reliability example |
 |---|---|---|
@@ -32,6 +32,7 @@ In his paper [Why Measure Performance? Different Purposes Require Different Meas
 | **Celebrate:** What reliability success is worth having a party for? | Milestones meaningful enough that people feel proud reaching them | No Sev 1 incidents this quarter |
 | **Learn:** Why is our system working, or not? | Detailed data that shows surprises | Incident reviews |
 | **Improve:** Did this change make the system better? | Evidence connecting what you changed to what happened | Chaos experiment |
+> Adapted from Behn (2003), “Why Measure Performance?”
 
 ## Different Purposes Don't Line Up
 
