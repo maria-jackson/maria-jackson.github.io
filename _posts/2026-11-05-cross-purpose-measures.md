@@ -45,7 +45,7 @@ This doesn't mean that any of the purposes are inherently bad. They just can hav
 
 **"Don't turn SLOs into performance targets."** Error budgets are built to *budget*, and they can work reasonably well to *motivate*. But SLOs make a poor *control* measure, because teams can't directly control them. Using them to *evaluate* takes a lot of adjustment.
 
-**"MTTR isn't statistically valid in your situation."** MTTR is great for *promoting*. But for *evaluating*, it has real statistical problems (see [the VOID report](https://www.verica.io/blog/mttr-is-a-misleading-metric-now-what/)), and it only tells you what happened, not how you affected it.
+**"MTTR isn't statistically valid in your situation."** MTTR is great for *promoting*. But for *evaluating*, it has [real statistical problems](https://resilienceinsoftware.org/news/1157532), and it only tells you what happened, not how you affected it.
 
 **"Action items measure whether you did something, not whether you improved the system!"** Action item completion is great for *control*, but it doesn't really speak to the other questions.
 
