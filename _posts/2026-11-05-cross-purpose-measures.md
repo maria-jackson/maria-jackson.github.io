@@ -32,6 +32,7 @@ In his paper [Why Measure Performance? Different Purposes Require Different Meas
 | **Celebrate:** What reliability success is worth having a party for? | Milestones meaningful enough that people feel proud reaching them | No Sev 1 incidents this quarter |
 | **Learn:** Why is our system working, or not? | Detailed data that shows surprises | Incident reviews |
 | **Improve:** Did this change make the system better? | Evidence connecting what you changed to what happened | Chaos experiment |
+
 > Adapted from Behn (2003), “Why Measure Performance?”
 
 ## Different Purposes Don't Line Up
