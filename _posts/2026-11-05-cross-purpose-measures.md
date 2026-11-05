@@ -51,6 +51,8 @@ This doesn't mean that any of the purposes are inherently bad. They just can hav
 
 Yeah, figuring out how to meet eight purposes at once in a complex system with a large number of stakeholders isn't realistic. We'll make tradeoffs, accept different risks and use proxy measurements that aren't ideal.
 
+Purpose isn't the only thing we argue about, either. Sometimes the disagreement is really about validity, acceptable levels of risk, or shaping a measurement to redirect who is accountable. Purpose is just one of the easier ones to spot.
+
 And frankly, sometimes it isn't worth even going through the process of making these measurements at all. (Hubbard's [How to Measure Anything](https://www.wiley.com/en-us/How+to+Measure+Anything%3A+Finding+the+Value+of+Intangibles+in+Business%2C+3rd+Edition-p-9781118539279) is good on deciding when it's worth it.)
 
 Hopefully, this gives you a quick way to see why a metrics discussion is going sideways, and helps in your next goals meeting.
