@@ -57,7 +57,7 @@ Purpose isn't the only thing we argue about, either. Sometimes the disagreement 
 
 And frankly, sometimes it isn't worth even going through the process of making these measurements at all. (Hubbard's [How to Measure Anything](https://www.wiley.com/en-us/How+to+Measure+Anything%3A+Finding+the+Value+of+Intangibles+in+Business%2C+3rd+Edition-p-9781118539279) is good on deciding when it's worth it.)
 
-Hopefully, this gives you a quick way to see why a metrics discussion is going sideways, and helps in your next goals meeting.
+But, if you expect you might be cross-purposes, try asking: “If this measurement worked perfectly, what would it get us?”
 
 ## Additional Reading
 
