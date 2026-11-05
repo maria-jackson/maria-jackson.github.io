@@ -27,7 +27,7 @@ In his paper [Why Measure Performance? Different Purposes Require Different Meas
 | **Evaluate:** What did our reliability work accomplish, compared to doing nothing? | What users experienced, weighed against what you invested, after accounting for things outside your control | SLO attainment, adjusted for team size, priorities and outages (often contentious) |
 | **Control:** Are people doing the reliability work they committed to? | Things people can directly do and be checked on | Action item completion |
 | **Budget:** Where should we spend engineering time on reliability? | Outputs/inputs | Error budgets |
-| **Motivate:** What will push the team to improve reliability? | Fast feedback against a near-term target | Reducing a team's pages |
+| **Motivate:** What will push the team to improve reliability? | Frequent, visible signs of progress toward a goal the team owns | Reducing a team's pages |
 | **Promote:** How do we show others our reliability work is paying off? | Clear numbers that connect with the audience | MTTR on a leadership slide |
 | **Celebrate:** What reliability success is worth having a party for? | Milestones meaningful enough that people feel proud reaching them | No Sev 1 incidents this quarter |
 | **Learn:** Why is our system working, or not? | Detailed data that shows surprises | Incident reviews |
