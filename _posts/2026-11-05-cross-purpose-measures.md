@@ -4,8 +4,6 @@ title: "“Don’t Measure It That Way!”: Why Reliability Measurements End Up 
 date: 2026-11-05 12:00:00 +0000
 categories: essays
 ---
-# “Don’t Measure It That Way!”: Why Reliability Measurements End Up at Cross-Purposes
-
 In software, we have a lot of ways to measure our systems. Lots of people like the green GitHub calendar, but many measurements have some debate involved.
 
 When we want to increase our reliability, we hear a lot of different ways to measure and then arguments against those measurements:
