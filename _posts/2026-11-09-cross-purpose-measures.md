@@ -22,7 +22,7 @@ I noticed that a lot of engineers (me included) prioritize high construct validi
 
 ## Eight Reasons to Measure
 
-Robert Behn's paper [Why Measure Performance? Different Purposes Require Different Measures](https://doi.org/10.1111/1540-6210.00322) gave me that vocabulary. He lists eight purposes for measuring performance, and what a measurement needs for each. He was writing about government agencies, but the purposes translate well to reliability work. The table below is a simplified, adapted version of his argument, and it's worth reading the whole thing.
+Robert Behn's paper [Why Measure Performance? Different Purposes Require Different Measures](https://doi.org/10.1111/1540-6210.00322) gave me that vocabulary. He lists eight purposes for measuring performance, and what a measurement needs for each. He was writing about government agencies, but the purposes translate well to reliability work. The table and essay below is a simplified, adapted version of his argument, and it's worth reading his original even if you aren't in public policy.
 
 | Purpose and the question it answers | What the measure needs | Reliability example |
 |---|---|---|
