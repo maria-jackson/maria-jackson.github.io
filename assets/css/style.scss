@@ -2,40 +2,51 @@
 # Only the YAML front matter header is required so Jekyll will process this file
 ---
 
+$accent-color: #b58900;
+$text-color: #222;
+$heading-color: #111;
+$avatar-border: rgba(0, 0, 0, 0.06);
+$avatar-shadow: rgba(0, 0, 0, 0.05);
+
 /* Page layout & readability */
 .site {
   --site-max-width: 46rem;
 }
 
-/* Title */
-.site-title, .site-title:visited {
-    color: #b58900;
+/* Typography */
+.site-title,
+.site-title:visited,
+.entry-title a {
+  color: $accent-color;
 }
 
-/* Body typography */
+.site-title,
+.site-title:visited {
+  text-decoration: none;
+}
+
 body {
   font-size: 1.05rem;
   line-height: 1.65;
-  color: #222;
+  color: $text-color;
 }
 
-/* Post meta and headings */
+h1,
+h2,
+h3 {
+  line-height: 1.15;
+  color: $heading-color;
+}
+
 .entry-title a {
-  color: #b58900;
   text-decoration: none;
 }
-h1, h2, h3 {
-  line-height: 1.15;
-  color: #111;
-}
 
-
-/* Hide Posts Heading */
+/* Hide page headings and feed links */
 .post-list-heading {
   display: none !important;
 }
 
-/* Hide common feed links / RSS subscribe links */
 a[href$="/feed.xml"],
 a[href$="feed.xml"],
 a[href$="/atom.xml"],
@@ -47,13 +58,11 @@ a[href*="/atom"] {
   display: none !important;
 }
 
-/* Hide any remaining rss subscribe block emitted by theme */
 .rss-subscribe,
 .rss-subscribe * {
   display: none !important;
   visibility: hidden !important;
 }
-
 
 /* Avatar / author image styling */
 .site-author {
@@ -62,17 +71,21 @@ a[href*="/atom"] {
   margin-right: 0.75rem;
 }
 
-.site-author-link { display: inline-block; border-radius: 999px; overflow: hidden; }
+.site-author-link {
+  display: inline-block;
+  border-radius: 999px;
+  overflow: hidden;
+}
 
 .site-author-avatar {
   display: block;
-  width: 96px;      /* default display size */
+  width: 96px;
   height: 96px;
   object-fit: cover;
   border-radius: 50%;
-  border: 2px solid rgba(0,0,0,0.06);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-  transition: transform .15s ease;
+  border: 2px solid $avatar-border;
+  box-shadow: 0 1px 3px $avatar-shadow;
+  transition: transform 0.15s ease;
 }
 
 .site-author-link:hover .site-author-avatar,
@@ -80,24 +93,18 @@ a[href*="/atom"] {
   transform: translateY(-2px);
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-  .site-author-avatar { width: 48px; height: 48px; }
-}
-
-/* About page layout tweaks for a larger, inline avatar */
+/* About page layout */
 .about-layout {
   display: flex;
-  align-items: flex-start;   /* top-align avatar with the copy on desktop */
+  align-items: flex-start;
   gap: 1rem;
 }
 
 .about-avatar {
   flex: 0 0 auto;
-  margin-top: 0;             /* small offset if you want it lower, adjust here */
+  margin-top: 0;
 }
 
-/* Desktop avatar size */
 .about-layout .about-avatar .site-author-avatar {
   width: 128px;
   height: 128px;
@@ -107,13 +114,17 @@ a[href*="/atom"] {
   flex-shrink: 0;
 }
 
-/* Text column */
 .about-copy {
   flex: 1;
 }
 
-/* Mobile: stack with centered avatar */
+/* Responsive */
 @media (max-width: 600px) {
+  .site-author-avatar {
+    width: 48px;
+    height: 48px;
+  }
+
   .about-layout {
     display: block;
   }
