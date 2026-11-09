@@ -4,7 +4,7 @@ title: "“Don’t Measure It That Way!”: Why Reliability Measurements End Up 
 date: 2026-11-09 12:00:00 +0000
 categories: essays
 ---
-Reliability measurements are an area where I've seen a lot of disagreement. It can be about validity, acceptable levels of risk, where to invest effort, shaping a measurement to redirect who is accountable, or whether it's worth measuring at all. I want to focus on a specific issue.
+Reliability measurements are an area where I've seen a lot of disagreement. It can be about validity, acceptable levels of risk, where to invest effort, shaping a measurement to redirect who is accountable, or whether it's worth measuring at all. But I want to focus on just one part: where we disagree about the purpose of the measurement itself.
 
 You've probably heard some of these:
 
@@ -15,6 +15,8 @@ You've probably heard some of these:
 | "We finished all our action items from that incident review." | "Action items measure whether you did something, not whether you improved the system!" |
 
 I didn't have a vocabulary to describe what I was seeing when I was disagreeing with a trusted coworker about a measurement. This person was clearly thoughtful and we had different needs, but I couldn't quite verbalize what the disconnect was.
+
+I noticed that a lot of engineers (me included) prioritize high construct validity and low noise in our measurements, or just want to go fully qualitative. And this makes sense given our roles. We get woken up in the night if an alert isn't well tuned. And we've also got to get buy-in for a larger project from someone in a 7-minute presentation because they have 10 hours of meetings today.
 
 > **Many arguments about reliability measurements are arguments about measurement purpose. This can happen even if you align on overall purpose.**
 
