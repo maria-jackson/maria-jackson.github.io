@@ -7,6 +7,11 @@
   --site-max-width: 46rem;
 }
 
+/* Title */
+.site-title, .site-title:visited {
+    color: #b58900;
+}
+
 /* Body typography */
 body {
   font-size: 1.05rem;
@@ -14,20 +19,9 @@ body {
   color: #222;
 }
 
-/* Accent color */
-a,
-a:visited {
-  color: #b58900;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(181, 137, 0, 0.12);
-}
-a:hover {
-  border-bottom-color: rgba(181, 137, 0, 0.28);
-}
-
 /* Post meta and headings */
 .entry-title a {
-  color: inherit;
+  color: #b58900;
   text-decoration: none;
 }
 h1, h2, h3 {
@@ -35,41 +29,8 @@ h1, h2, h3 {
   color: #111;
 }
 
-/* Blockquote styling for essays */
-blockquote {
-  border-left: 3px solid rgba(0, 0, 0, 0.08);
-  padding-left: 1rem;
-  color: #444;
-  font-style: italic;
-  margin-left: 0;
-  margin-right: 0;
-  background: rgba(245, 245, 245, 0.6);
-  border-radius: 4px;
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
-}
 
-/* Footer / small details */
-.site-footer {
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
-  padding-top: 1rem;
-  margin-top: 2rem;
-  font-size: 0.9rem;
-  color: #666;
-}
-
-.site-footer .wrapper {
-  text-align: center;
-}
-
-/* Hide nav Home link and post list heading */
-.site-nav a[href="/"],
-.page-heading,
-.post-list-heading {
-  display: none !important;
-}
-
-/* Make the 'Essays' heading text show in place of Posts */
+/* Hide Posts Heading */
 .post-list-heading {
   display: none !important;
 }
