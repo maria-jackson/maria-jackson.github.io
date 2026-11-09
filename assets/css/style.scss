@@ -18,11 +18,26 @@ h3 {
 a,
 a:visited {
   color: #1f3a5f;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.12em;
 }
 
 a:hover,
 a:focus {
   color: #16304f;
+  text-decoration-thickness: 2px;
+}
+
+/* Keep underlines for links inside post/page content, but not the site nav. */
+.post-content a,
+.page-content a,
+.entry-content a,
+article a,
+article a:visited {
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.12em;
 }
 
 .site-title,
