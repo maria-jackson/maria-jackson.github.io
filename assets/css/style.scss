@@ -2,48 +2,40 @@
 # Only the YAML front matter header is required so Jekyll will process this file
 ---
 
-$accent-color: #b58900;
-$text-color: #222;
-$heading-color: #111;
-$avatar-border: rgba(0, 0, 0, 0.06);
-$avatar-shadow: rgba(0, 0, 0, 0.05);
-
 /* Page layout & readability */
 .site {
   --site-max-width: 46rem;
 }
 
-/* Typography */
-.site-title,
-.site-title:visited,
-.entry-title a {
-  color: $accent-color;
+/* Title */
+.site-title, .site-title:visited {
+    color: #b58900;
 }
 
-.site-title,
-.site-title:visited,
-.entry-title a {
-  text-decoration: none;
-}
-
+/* Body typography */
 body {
   font-size: 1.05rem;
   line-height: 1.65;
-  color: $text-color;
+  color: #222;
 }
 
-h1,
-h2,
-h3 {
+/* Post meta and headings */
+.entry-title a {
+  color: #b58900;
+  text-decoration: none;
+}
+h1, h2, h3 {
   line-height: 1.15;
-  color: $heading-color;
+  color: #111;
 }
 
-/* Hide page headings and feed links */
+
+/* Hide Posts Heading */
 .post-list-heading {
   display: none !important;
 }
 
+/* Hide common feed links / RSS subscribe links */
 a[href$="/feed.xml"],
 a[href$="feed.xml"],
 a[href$="/atom.xml"],
@@ -55,11 +47,13 @@ a[href*="/atom"] {
   display: none !important;
 }
 
+/* Hide any remaining rss subscribe block emitted by theme */
 .rss-subscribe,
 .rss-subscribe * {
   display: none !important;
   visibility: hidden !important;
 }
+
 
 /* Avatar / author image styling */
 .site-author {
@@ -68,21 +62,17 @@ a[href*="/atom"] {
   margin-right: 0.75rem;
 }
 
-.site-author-link {
-  display: inline-block;
-  border-radius: 999px;
-  overflow: hidden;
-}
+.site-author-link { display: inline-block; border-radius: 999px; overflow: hidden; }
 
 .site-author-avatar {
   display: block;
-  width: 96px;
+  width: 96px;      /* default display size */
   height: 96px;
   object-fit: cover;
   border-radius: 50%;
-  border: 2px solid $avatar-border;
-  box-shadow: 0 1px 3px $avatar-shadow;
-  transition: transform 0.15s ease;
+  border: 2px solid rgba(0,0,0,0.06);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  transition: transform .15s ease;
 }
 
 .site-author-link:hover .site-author-avatar,
@@ -90,59 +80,51 @@ a[href*="/atom"] {
   transform: translateY(-2px);
 }
 
-/* About page: editorial portrait and two-column introduction */
+/* Responsive */
+@media (max-width: 600px) {
+  .site-author-avatar { width: 48px; height: 48px; }
+}
+
+/* About page layout tweaks for a larger, inline avatar */
 .about-layout {
-  display: grid;
-  grid-template-columns: 9.5rem minmax(0, 1fr);
-  align-items: start;
-  gap: 1.75rem;
-  padding: 1.5rem 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: flex-start;   /* top-align avatar with the copy on desktop */
+  gap: 1rem;
 }
 
 .about-avatar {
-  margin: 0;
+  flex: 0 0 auto;
+  margin-top: 0;             /* small offset if you want it lower, adjust here */
 }
 
+/* Desktop avatar size */
 .about-layout .about-avatar .site-author-avatar {
-  display: block;
-  width: 9rem;
-  height: 11rem;
+  width: 128px;
+  height: 128px;
   object-fit: cover;
-  border: 0;
-  border-radius: 0.35rem;
-  box-shadow: 0.5rem 0.5rem 0 rgba($accent-color, 0.2);
+  border-radius: 50%;
+  display: block;
+  flex-shrink: 0;
 }
 
+/* Text column */
 .about-copy {
-  min-width: 0;
+  flex: 1;
 }
 
-.about-copy > :first-child {
-  margin-top: 0;
-}
-
-/* Responsive */
+/* Mobile: stack with centered avatar */
 @media (max-width: 600px) {
-  .site-author-avatar {
-    width: 48px;
-    height: 48px;
-  }
-
   .about-layout {
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
-    padding: 1.25rem 0;
+    display: block;
   }
 
   .about-avatar {
     text-align: center;
+    margin-bottom: 0.75rem;
   }
 
   .about-layout .about-avatar .site-author-avatar {
-    width: 6rem;
-    height: 7.5rem;
-    margin: 0 auto;
+    width: 64px;
+    height: 64px;
   }
 }
