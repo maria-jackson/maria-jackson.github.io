@@ -53,13 +53,13 @@ The [McNamara fallacy](https://en.wikipedia.org/wiki/McNamara_fallacy), [Goodhar
 
 **"Action items measure whether you did something, not whether you improved the system!"** A well-formed action item list might lead to improvements, but the quality of the list is fairly independent of the completion rate. Still, completion is great for *control* and *motivating*.
 
-In each case, both sides have a point. They're measuring for different reasons.
+None of these people are wrong. They just want different things from the same number.
 
 ## So, there is no perfect measurement?
 
 Right. These purposes pull against each other, but that doesn't make any of them bad.
 
-If we understand what each person needs from a measurement, we can more often propose metrics that work for more people. We can better articulate our needs and tradeoffs. And we can design countermeasures for the ones we accept.
+If we understand what each person needs from a measurement, we can more often propose metrics that work for more people. For me, it also made it easier to explain my own needs, and to plan countermeasures for the tradeoffs we chose to accept.
 
 Thinking back to that disagreement with my coworker, I want to understand the other person's needs better. Next time, I'd ask:
 
