@@ -2,24 +2,34 @@
 # Only the YAML front matter header is required so Jekyll will process this file
 ---
 
-/* Keep the theme's layout, with a little more room for readable text. */
+/* A comfortable reading width while keeping Minima's layout intact. */
 .site {
   --site-max-width: 46rem;
 }
 
-/* Use gold only for the site title. */
+/* Keep gold as the single accent. */
 .site-title,
 .site-title:visited {
   color: #b58900;
+  letter-spacing: -0.02em;
 }
 
-/* Subtle readability refinements; leave the theme's other styling intact. */
+/* Quiet, readable typography. */
 body {
-  line-height: 1.65;
+  color: #333;
+  line-height: 1.7;
 }
 
 h1,
 h2,
 h3 {
-  line-height: 1.2;
+  color: #222;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+/* A subtle header divider instead of extra decoration. */
+.site-header {
+  border-top: 0;
+  border-bottom-color: #e8e6e1;
 }
