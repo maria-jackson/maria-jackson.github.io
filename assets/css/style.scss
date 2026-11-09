@@ -2,19 +2,7 @@
 # Only the YAML front matter header is required so Jekyll will process this file
 ---
 
-/* A comfortable reading width while keeping Minima's layout intact. */
-.site {
-  --site-max-width: 46rem;
-}
-
-/* Keep gold as the single accent. */
-.site-title,
-.site-title:visited {
-  color: #b58900;
-  letter-spacing: -0.02em;
-}
-
-/* Quiet, readable typography. */
+/* Readability */
 body {
   color: #333;
   line-height: 1.7;
@@ -25,10 +13,87 @@ h2,
 h3 {
   color: #222;
   line-height: 1.25;
+}
+
+/* Keep links neutral; reserve gold for the site title. */
+a,
+a:visited {
+  color: #333;
+}
+
+a:hover,
+a:focus {
+  color: #111;
+}
+
+.site-title,
+.site-title:visited {
+  color: #b58900;
   letter-spacing: -0.02em;
 }
 
-/* A subtle header divider instead of extra decoration. */
+/* Hide the Posts title and RSS subscribe links the way they were before. */
+.post-list-heading,
+.page-heading {
+  display: none !important;
+}
+
+a[href$="/feed.xml"],
+a[href$="feed.xml"],
+a[href$="/atom.xml"],
+a[href$="atom.xml"],
+.icon-feed,
+.rss,
+a[href*="/feed"],
+a[href*="/atom"],
+.rss-subscribe,
+.rss-subscribe * {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Restore the previous round avatar styling. */
+.site-author-link {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.site-author-avatar {
+  display: block;
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border: 2px solid rgba(0, 0, 0, 0.06);
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: transform 0.15s ease;
+}
+
+.site-author-link:hover .site-author-avatar,
+.site-author-link:focus .site-author-avatar {
+  transform: translateY(-2px);
+}
+
+/* Keep the About portrait larger on desktop. */
+.about-layout .about-avatar .site-author-avatar {
+  width: 128px;
+  height: 128px;
+}
+
+@media (max-width: 600px) {
+  .site-author-avatar {
+    width: 48px;
+    height: 48px;
+  }
+
+  .about-layout .about-avatar .site-author-avatar {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+/* Subtle header divider. */
 .site-header {
   border-top: 0;
   border-bottom-color: #e8e6e1;
