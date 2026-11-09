@@ -21,7 +21,8 @@ $avatar-shadow: rgba(0, 0, 0, 0.05);
 }
 
 .site-title,
-.site-title:visited {
+.site-title:visited,
+.entry-title a {
   text-decoration: none;
 }
 
@@ -36,10 +37,6 @@ h2,
 h3 {
   line-height: 1.15;
   color: $heading-color;
-}
-
-.entry-title a {
-  text-decoration: none;
 }
 
 /* Hide page headings and feed links */
@@ -93,29 +90,37 @@ a[href*="/atom"] {
   transform: translateY(-2px);
 }
 
-/* About page layout */
+/* About page: editorial portrait and two-column introduction */
 .about-layout {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: 9.5rem minmax(0, 1fr);
+  align-items: start;
+  gap: 1.75rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .about-avatar {
-  flex: 0 0 auto;
-  margin-top: 0;
+  margin: 0;
 }
 
 .about-layout .about-avatar .site-author-avatar {
-  width: 128px;
-  height: 128px;
-  object-fit: cover;
-  border-radius: 50%;
   display: block;
-  flex-shrink: 0;
+  width: 9rem;
+  height: 11rem;
+  object-fit: cover;
+  border: 0;
+  border-radius: 0.35rem;
+  box-shadow: 0.5rem 0.5rem 0 rgba($accent-color, 0.2);
 }
 
 .about-copy {
-  flex: 1;
+  min-width: 0;
+}
+
+.about-copy > :first-child {
+  margin-top: 0;
 }
 
 /* Responsive */
@@ -126,16 +131,18 @@ a[href*="/atom"] {
   }
 
   .about-layout {
-    display: block;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 1.25rem 0;
   }
 
   .about-avatar {
     text-align: center;
-    margin-bottom: 0.75rem;
   }
 
   .about-layout .about-avatar .site-author-avatar {
-    width: 64px;
-    height: 64px;
+    width: 6rem;
+    height: 7.5rem;
+    margin: 0 auto;
   }
 }
