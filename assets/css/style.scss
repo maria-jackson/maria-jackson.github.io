@@ -43,6 +43,10 @@ article a:visited {
   letter-spacing: -0.02em;
 }
 
+blockquote {
+  letter-spacing: 0px;
+}
+
 /* Hide the Posts title and RSS subscribe links the way they were before. */
 .post-list-heading,
 .page-heading {
